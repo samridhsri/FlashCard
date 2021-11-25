@@ -15,8 +15,17 @@ def homepage():
         cursor = connection.cursor()
         username = request.form['username']
         password = request.form['password']
+        
+        #Validating User
+        query = "SELECT name, password from users where name= '"+username+"' and password= '"+password+"'"
+        cursor.execute(query)
+        a = cursor.fetchall()
+        if(len(a)==0):
+            print("User Not found Invalid Credentials")
+            return render_template("homepage.html")
+        else:
+            return render_template("index.html")
 
-        print(username, password)
     return render_template("homepage.html")
 
 @app.route("/register.html",methods=["GET","POST"])
