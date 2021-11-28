@@ -4,17 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylereg.css') }}">
+    <!-- <link rel="stylesheet" href="stylereg.css"> -->
     <title>Register</title>
 </head>
 <body>
     <h1>Register</h1>
+    <div class="container">
     <form method="Post">
         <a>Enter Name</a>
-        <input type="text" name="new_user" placeholder="Username">
+        <input type="text" name="new_user" placeholder="Username" class="tb">
+        <br>
+        <br>
         <a>Enter Password</a>
-        <input type="password" name="new_pass" placeholder="Password">
+        <input type="password" name="new_pass" placeholder="Password" class="tb">
+        <br>
+        <br>
+        <center>
         <input type="submit" name="Go">
+        </center>
     </form>
+    </div>
     
 </body>
 </html>

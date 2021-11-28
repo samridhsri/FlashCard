@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 *{
   margin: 0;
@@ -7,22 +7,25 @@
 }
 
 body{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Bebas Neue', cursive;
   font-size: 1rem;
-  background: whitesmoke;
+  background: rgb(126, 0, 199);
 }
 
 button{
+
+  color: white;
   padding: 8px;
   outline: none;
   cursor: pointer;
-  border: 1px solid lightgray;
-  border-radius: 5px;
-  background: whitesmoke;
+  border: 1px solid black;
+  border-radius: 0px;
+  background: black;
 }
 
 button:hover{
   background-color: rgba(0, 0, 0, 0.1);
+  color: black;
 }
 
 .container{
@@ -43,7 +46,7 @@ header{background-color: #fff;}
 
 #header button{
   font-family: inherit;
-  border: 1px solid red;
+  border: 1px solid black;
 }
 
 #create_card{

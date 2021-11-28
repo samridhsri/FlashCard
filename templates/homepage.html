@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="stylehome.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/stylehome.css') }}">
+
     <title>Home</title>
 </head>
 <body>
@@ -15,15 +18,28 @@
         <h2>Login</h2>
     </div>
 
+    <div class="container">
+
     <form method="post">
         <a>Enter Username</a>
-        <input type="text" name="username" placeholder="Username">
+        <input type="text" name="username" placeholder="Username" class="tb">
+        <br>
+        <br>
         <a>Enter Password</a>
-        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="password" placeholder="Password" class="tb">
+        <br>
+        <br>
+        <center>
         <input type="submit" name="Go">
+        </center>
     </form>
 
-    <a href="register.html">register here!</a>
-    
+    </div>
+
+    <a href="register.html" id="reg">register here!</a>
+    <br>
+    <br>
+    <p> Made By Samridh Srivastava
+    <p> Roll number - 21f1003764
 </body>
 </html>
